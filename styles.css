@@ -1,0 +1,61 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+}
+
+section {
+    text-align: center;
+    margin: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.photo-container {
+    display: inline-block;
+    position: relative;
+}
+
+.enhanced-photo {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);  /* Add a shadow effect */
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: brightness(1.1) contrast(1.2) saturate(1.2); /* Enhance brightness, contrast, and saturation */
+}
+
+.enhanced-photo:hover {
+    transform: scale(1.05); /* Slight zoom effect when hovered */
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+    .enhanced-photo {
+        max-width: 100%;
+    }
+}
